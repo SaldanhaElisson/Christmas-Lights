@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #19151A;
+    --red-color: #C0392B;
+    --green-color: #2ECC71;
+    --yellor-color: #F1C40F;
+    --buttom-color: #B886DE;
+}
+
+.main{
+    height: 100vh;
+    width: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 4fr ;
+    grid-template-areas: 
+    "header"
+    "main";
+    
+}
+
+section{
+    grid-area: main;
+    align-self: center;
+}
