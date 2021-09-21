@@ -8,23 +8,96 @@
     --bg-color: #19151A;
     --red-color: #C0392B;
     --green-color: #2ECC71;
-    --yellor-color: #F1C40F;
+    --yellow-color: #F1C40F;
     --buttom-color: #B886DE;
+    --blue-color: #64FCFE;
+}
+body{
+    font-size: 62.5%;
 }
 
 .main{
+    
     height: 100vh;
-    width: 100vh;
-    margin: auto;
+    width: 100vw;
     display: grid;
     grid-template-rows: 1fr 4fr ;
     grid-template-areas: 
     "header"
     "main";
+
+    background-color: var(--bg-color);
     
 }
 
 section{
     grid-area: main;
     align-self: center;
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+.lights{
+    justify-content: center;
+    display: flex;
+    margin-top: 1.5rem;
+
+}
+
+.lights .circle{
+    height: 5rem;
+    width: 5rem;
+    clip-path: circle(50% at 50% 50%);
+    margin-right: 1rem;
+}
+
+.lights .circle.blue{
+    background-color: var(--blue-color);
+}
+.lights .circle.yellow{
+    background-color: var(--yellow-color);
+}
+.lights .circle.red{
+    background-color: var(--red-color);
+}
+.lights .circle.green{
+    background-color: var(--green-color);
+    animation: glow-4 1s infinite;
+}
+
+
+section h1 {
+    text-align: center;
+    position: relative;   
+    top:25%;
+
+    font-size: 5rem;
+    color: white;
+    text-shadow: 0px 0px 10px  white;
+}
+
+section .controllerLights{
+    position: relative;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    height: 2.8rem;
+}
+
+button.onOffLight{
+    border-radius: 50%;
+    width: 2.8rem;
+    /* border-radius: 0.1rem; */
+    background-color: var(--bg-color);
+    border-color: var(--buttom-color);
+
+    color:white;
+    font-size: 1rem;
+
+    margin-right: 2rem;
 }
