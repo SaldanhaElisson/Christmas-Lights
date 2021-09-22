@@ -10,22 +10,22 @@
 <body>
     <div class="main">
         <div class="lights">
-            <div class="circle yellow"></div>
-            <div class="circle red"></div>
-            <div class="circle yellow"></div>
-            <div class="circle red"></div>
-            <div class="circle green"></div>
-            <div class="circle blue"></div>
-            <div class="circle green"></div>
-            <div class="circle blue"></div>
+            <div class="circle yellow lightsOff"></div>
+            <div class="circle red lightsOff"></div>
+            <div class="circle yellow lightsOff"></div>
+            <div class="circle red lightsOff"></div>
+            <div class="circle green lightsOff"></div>
+            <div class="circle blue lightsOff"></div>
+            <div class="circle green lightsOff"></div>
+            <div class="circle blue lightsOff"></div>
         </div>
         <section>
             <h1>Christmas Lights</h1>
             <div class="controllerLights">
-                <button class="onOffLight">On</button>
-                <button class="onOffLight">Off</button>
+                <button class="onOffLight buttonOn">On</button>
+                <button class="onOffLight buttonOff">Off</button>
                 <label for="inTime">Speed:</label>
-                <input type="number" class="inTime" id="inTime">
+                <input type="number" class="inTime" id="inTime" placeholder="Until at 5 " min="1" max="5" value="1">
                 <button class="runTime">Run</button>
             </div>
 
